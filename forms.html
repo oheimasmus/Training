@@ -25,10 +25,10 @@
         </p>
         <p>
             <label for="number">Enter a number</label>
-            <input type="number" placeholder="enter a number" id="num" name="number">
+            <input type="number" placeholder="enter a number" id="num" name="num" min="1" max="10">
         </p>
         <button type="button">Regular button (won't submit)</button>
-        <button>Submit</button>
+
     </form>
     <hr>
     <h2>Hijacking Searches</h2>
@@ -46,6 +46,31 @@
     <form action="https://www.youtube.com/results">
         <input type="text" name="search_query">
         <button>Search Youtube</button>
+    </form>
+    <p>
+    <form action="/vegggies">
+        <label for="hummus">Amount of Hummus</label>
+        <input type="range" id="hummus" min="1" max="100" value="75" name="hummus_level">
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <textarea id="requests" rows="10" cols="40" name="Requests?" placeholder="Type something here"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    </p>
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+        </p>
+        <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <button>Submit</button>
     </form>
 </body>
 
