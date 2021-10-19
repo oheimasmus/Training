@@ -9,3 +9,39 @@ h1 {
 a { color: blue;
     text-decoration: none;
 }
+.list {
+color: #61210F;
+}
+.guineabee {
+    width: 100px;
+}
+img {
+    width: 50%;
+}
+.zilla {
+    width: 50%;
+}
+.eating {
+    width: 100%;
+}
+
+button {
+    color:#800f2f;
+    background-color: #ffccd5;
+}
+button:hover{
+    color: #007f5f;
+    background-color: #ffff3f;
+}
+button:active {
+    background-color: #f18701;
+}
+a:hover {
+    text-decoration: underline;
+}
+h3::first-letter {
+    font-size: 40px;
+}
+::selection {
+    background-color: #ffc8dd;
+}
